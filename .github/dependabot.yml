@@ -1,18 +1,13 @@
 version: 2
+registries:
+  pylance-azure-npm-feed:
+    type: npm-registry
+    url: https://pkgs.dev.azure.com/devdiv/_packaging/Pylance/npm/registry
+    token: ${{ secrets.NPM_PRIVATE_REG_TOKEN }}
+
 updates:
   - package-ecosystem: 'npm'
     directory: ''
-    open-pull-requests-limit: 10
-    schedule:
-      interval: 'daily'
-    # target-branch: 'develop'
-    # assignees:
-    #   - assignee_one
-    # reviewers:
-    #   - reviewer_one
-
-  - package-ecosystem: 'nuget'
-    directory: 'Build'
     open-pull-requests-limit: 10
     schedule:
       interval: 'daily'
