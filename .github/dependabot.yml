@@ -8,6 +8,8 @@ registries:
 updates:
   - package-ecosystem: 'npm'
     directory: ''
+    registries:
+      - pylance-azure-npm-feed
     open-pull-requests-limit: 10
     schedule:
       interval: 'daily'
